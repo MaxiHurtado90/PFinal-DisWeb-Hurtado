@@ -1,0 +1,466 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos de la navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+}
+
+.logo img {
+    margin-right: 10px;
+
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar-nav {
+        margin-top: 20px;
+    }
+    .collapse.navbar-collapse {
+        justify-content: center;
+    }
+    .navbar-nav .nav-link {
+        text-align: center;
+    }
+    .navbar-toggler {
+        order: 3;
+        margin-left: auto;
+    }
+}
+
+
+/* Estilos del call to action */
+.call {
+    text-align: center;
+    padding: 50px 0;
+}
+
+
+/* Estilos de los recuadros destacados */
+.destacados {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-top: 50px;
+}
+
+.destacado {
+    width: calc(25% - 20px);
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.destacado h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.destacado p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.destacado a {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+
+.destacado a:hover {
+    background-color: #555;
+}
+
+@media (max-width: 768px) {
+    .destacados {
+        flex-direction: column;
+        align-items: center;
+    }
+    .destacado {
+        width: 80%;
+    }
+}
+/* Estilos del footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.redes {
+    margin-top: 20px;
+}
+
+.redes i {
+    font-size: 24px;
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* Estilos del botón de subir */
+.subir {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+}
+
+.subir i {
+    font-size: 20px;
+}
+
+
+/* Estilos del llamado a la acción */
+.main-section .call {
+    text-align: center;
+    padding: 100px 0;
+    min-height:300px;
+    background-size:cover; 
+    background-position: center;
+    color: #ffffff; /* Cambia el color del texto según corresponda */
+}
+
+.main-section .call h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.main-section .call p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.main-section .call a {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+
+.main-section .call a:hover {
+    background-color: #555;
+}
+main {
+    min-height: 100vh;
+}
+
+/* Estilos para la información de mapa */
+
+.mapa {
+    flex-basis: 50%; 
+    padding: 10px; 
+    box-sizing: border-box;
+} 
+
+.contacto p {
+    margin: 0; 
+}
+
+.mapa iframe {
+    width: 100%; 
+    height: 400px; 
+    border: none; 
+}
+
+/* Estilos de la sección de planes */
+.planes {
+    color: #040115;
+    background-color: #85b8ef60;
+    padding: 30px 0;
+    background-size: cover;
+    background-position: center;
+    background-color: #85b8ef60;
+    min-height: 100vh;
+    display: flex;  
+}
+
+.planes h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.planes ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.planes li {
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative; 
+    background-image: url('../img/tv.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: white; 
+    text-align: center; 
+}
+
+.planes li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+.planes li p {
+    font-size: 18px;
+    margin: 5px 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px;
+}
+
+.planes li strong {
+    font-size: 22px;
+}
+
+
+.btn {
+    display: grid;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    padding: 0;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .planes {
+        padding: 15px; /* Ajusta espacio interior en dispositivos móviles */
+    }
+    .planes h2 {
+        font-size: 24px; /* Ajusta tamaño de fuente del título en dispositivos móviles */
+    }
+    .planes li {
+        padding: 15px; /* Ajusta espacio interior de cada plan en dispositivos móviles */
+    }
+    .planes li strong {
+        font-size: 18px; /* Ajusta tamaño de fuente dispositivos móviles */
+    }
+    .planes li p {
+        font-size: 16px;
+    }
+}
+
+
+/* Estilos de la sección Nosotros */
+.nosotros-image {
+    position: relative;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.nosotros-image img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+
+
+.nosotros-text {
+    margin-top: 30px;
+}
+
+.nosotros-text p {
+    font-size: 24px;
+    line-height: 1.6;
+}
+
+/* Estilos de la sección de contacto */
+.contacto {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+    text-align: center;
+    color: #333;
+}
+
+.contacto h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contacto form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contacto label,
+.contacto input,
+.contacto textarea,
+.contacto button {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contacto label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.contacto input,
+.contacto textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contacto textarea {
+    resize: vertical;
+}
+
+.contacto button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.contacto button:hover {
+    background-color: #555;
+}
+
+/* Estilos de la tabla de la grilla */
+.tabla-grilla {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+.tabla-grilla th,
+.tabla-grilla td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.tabla-grilla th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+.tabla-grilla tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.tabla-grilla tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    margin-right: 10px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.navbar li:first-child {
+    margin-left: 0;
+}
+
+.navbar li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.redes {
+    margin-top: 20px;
+}
+
+.redes i {
+    font-size: 24px;
+    color: #fff;
+    margin: 0 10px;
+}
+
+
