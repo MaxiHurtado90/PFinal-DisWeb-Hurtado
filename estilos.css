@@ -206,6 +206,8 @@ main {
     background-color: #85b8ef60;
     min-height: 100vh;
     display: flex;  
+    flex-direction: column; 
+    align-items: center;
 }
 
 .planes h2 {
@@ -221,6 +223,7 @@ main {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     justify-content: center;
+    width: 100%
 }
 
 .planes li {
