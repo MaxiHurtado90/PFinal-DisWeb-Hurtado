@@ -62,7 +62,7 @@ header {
     }
 }
 
-/* Estilos del call to action */
+/* Estilos del carusel */
 .call {
     text-align: center;
     padding: 50px 0;
@@ -373,6 +373,7 @@ footer {
 
 /* Estilos de la sección Nosotros */
 #titulo-container h1 {
+
     display: flex;
     justify-content: center; 
     align-items: center; 
@@ -391,12 +392,11 @@ footer {
         align-items: center;
         margin-bottom: 20px;
         
-        img {
+        img { 
           max-width: 50%;
           border-radius: 5px;
           margin-right: 20px;
           margin-left: 20px;
-          
         }
   
         .text {

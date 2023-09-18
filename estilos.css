@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", Arial, sans-serif;
+  background-color: rgba(229, 232, 235, 0.985);
 }
 
 .container {
@@ -26,6 +27,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: "Roboto";
+  font-size: 18px;	
 }
 .navbar .logo {
   display: flex;
@@ -56,7 +59,7 @@ header {
   }
 }
 
-/* Estilos del call to action */
+/* Estilos del carusel */
 .call {
   text-align: center;
   padding: 50px 0;
@@ -228,11 +231,10 @@ footer {
 /* Estilos de la sección de planes */
 .planes {
   color: #040115;
-  background-color: rgba(222, 234, 246, 0.6117647059);
   padding: 40px 0;
   background-size: cover;
   background-position: center;
-  background-color: rgba(172, 174, 176, 0.4901960784);
+  background-color: rgba(229, 232, 235, 0.49);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -435,6 +437,7 @@ footer {
     transform: translateY(0);
   }
 }
+
 /* Estilo para Señales */
 .imagen-container {
   display: grid;
@@ -442,10 +445,12 @@ footer {
   gap: 5px;
   align-items: center;
   justify-content: center;
+  background-color: white !important;
 }
 .imagen-container img {
   width: 100px;
 }
+
 @media (max-width: 768px) {
   .imagen-container {
     grid-template-columns: repeat(2, 1fr);
@@ -459,9 +464,9 @@ footer {
   background-image: url("img/grilla2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 100px;
-  color: rgba(255, 255, 255, 0.818);
+  padding: 150px;
+  color: rgba(255, 255, 255, 0.856);
   text-align: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  margin: 0px 0 60px;
-}/*# sourceMappingURL=estilos.css.map */
+  margin: 0px 0 0px;
+}
