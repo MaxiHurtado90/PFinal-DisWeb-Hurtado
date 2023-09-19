@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto',Arial, sans-serif;
+    background-color: #f5f3f3e5;
 }
 
 .container {
@@ -25,6 +26,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: 'Roboto';
+    font-size: 18px;
 
     .logo {
         display: flex;
@@ -96,11 +99,12 @@ header {
 
 .destacado {
     width: calc(33% - 20px);
-    background-color: #f0f0f0;
+    background-color: #dad8d8;
     padding: 30px;
     margin-bottom: 30px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
+    font-family:monospace;
 
     h2 {
         font-size: 24px;
@@ -263,15 +267,15 @@ footer {
 /* Estilos de la sección de planes */
 .planes {
     color: #040115;
-    background-color: #deeaf69c;
     padding: 40px 0;
     background-size: cover;
     background-position: center;
-    background-color: #acaeb07d;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+
 
     h2 {
         text-align: center;
@@ -373,12 +377,13 @@ footer {
 
 /* Estilos de la sección Nosotros */
 #titulo-container h1 {
-
     display: flex;
     justify-content: center; 
     align-items: center; 
     height: 10vh; 
-    margin-top: 10px;
+    margin-top: 10px;   
+    text-shadow: 2px 2px 4px rgba(84, 84, 84, 0.564); 
+
   }
   
 .about-us {
@@ -447,6 +452,7 @@ footer {
     background-repeat: no-repeat; 
     background-position: center; 
     padding: 0px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
 
 
@@ -505,12 +511,15 @@ footer {
  }
 
 /* Estilo para Señales */
+
 .imagen-container {
     display: grid;
     grid-template-columns: repeat(6, 1fr); 
     gap: 5px;
     align-items: center; 
     justify-content: center; 
+    background-color: white !important;
+
   
     img {
       width: 100px; 
@@ -529,9 +538,9 @@ footer {
     background-image: url('img/grilla2.jpg'); 
     background-size: cover; 
     background-repeat: no-repeat; 
-    padding: 100px;  
+    padding: 150px;  
     color: rgba(255, 255, 255, 0.818); 
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
-    margin: 0px 0 60px ;
+    margin: 0px 0 0px ;
 }
