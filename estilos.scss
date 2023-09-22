@@ -517,7 +517,7 @@ footer {
 .imagen-container {
     display: grid;
     grid-template-columns: repeat(6, 1fr); 
-    gap: 5px;
+    gap: 10px;
     align-items: center; 
     justify-content:center; 
     background-color: white !important;
@@ -533,6 +533,8 @@ footer {
         h2 {
           font-size: 24px; 
         }
+
+        gap: 60px;
       }
     }
     
