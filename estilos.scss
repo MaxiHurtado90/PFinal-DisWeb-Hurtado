@@ -159,9 +159,8 @@ header {
     }
 
     #carouselExampleSlidesOnly img {
-        width: 100%;
-        height: auto;
-        max-height: 300px;
+        max-height: 150px;
+        max-width: 150px;
     }
 }
 
@@ -407,9 +406,11 @@ footer {
         .text {
           font-family: 'Roboto';
           font-size: 19px;
-          text-align: justify;
+          text-align: center;
           margin-top: 0;
           flex: 1;
+          margin-bottom: 10px; 
+          line-height:1.2; 
         }
       }
   
@@ -431,7 +432,8 @@ footer {
         }
   
         .text {
-          text-align: justify;
+          justify-content: center;  
+          text-align:center;
           padding: 10px;
           margin: 10px;
         }
@@ -517,7 +519,7 @@ footer {
     grid-template-columns: repeat(6, 1fr); 
     gap: 5px;
     align-items: center; 
-    justify-content: center; 
+    justify-content:center; 
     background-color: white !important;
 
   

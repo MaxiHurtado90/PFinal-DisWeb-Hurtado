@@ -137,9 +137,8 @@ header {
     width: 80%;
   }
   #carouselExampleSlidesOnly img {
-    width: 100%;
-    height: auto;
-    max-height: 300px;
+    max-height: 150px;
+    max-width: 150px;
   }
 }
 /* Estilos del footer */
@@ -356,9 +355,11 @@ footer {
 .about-us .container .content .text {
   font-family: "Roboto";
   font-size: 19px;
-  text-align: justify;
+  text-align: center;
   margin-top: 0;
   flex: 1;
+  margin-bottom: 10px;
+  line-height: 1.2;
 }
 .about-us .container .content:nth-child(even) {
   flex-direction: row-reverse;
@@ -374,7 +375,8 @@ footer {
     margin-bottom: 10px;
   }
   .about-us .container .content .text {
-    text-align: justify;
+    justify-content: center;
+    text-align: center;
     padding: 10px;
     margin: 10px;
   }
