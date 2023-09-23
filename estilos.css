@@ -137,8 +137,8 @@ header {
     width: 80%;
   }
   #carouselExampleSlidesOnly img {
-    max-height: 150px;
-    max-width: 150px;
+    max-height: 250px;
+    max-width: 250px;
   }
 }
 /* Estilos del footer */
